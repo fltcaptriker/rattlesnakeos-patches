@@ -13,5 +13,5 @@
  PRODUCT_DEVICE := walleye
  PRODUCT_MODEL := AOSP on walleye
 +
-+GAPPS_VARIANT := pico
++GAPPS_VARIANT := stock
 +$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
