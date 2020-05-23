@@ -12,6 +12,6 @@
  PRODUCT_NAME := aosp_walleye
  PRODUCT_DEVICE := walleye
  PRODUCT_MODEL := AOSP on walleye
-+GAPPS_EXCLUDED_PACKAGES := LatinImeGoogle
-+GAPPS_VARIANT := micro
++
++GAPPS_VARIANT := super
 +$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
