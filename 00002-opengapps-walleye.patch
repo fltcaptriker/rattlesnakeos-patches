@@ -13,5 +13,5 @@
  PRODUCT_DEVICE := walleye
  PRODUCT_MODEL := AOSP on walleye
 +
-+GAPPS_VARIANT := micro
++GAPPS_VARIANT := nano
 +$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
