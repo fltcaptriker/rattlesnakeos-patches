@@ -1,0 +1,21 @@
+--- Android.bp	2020-05-23 06:26:07.671649464 -0400
++++ Android.bp.new	2020-05-23 15:02:26.010996876 -0400
+@@ -39,6 +39,18 @@
+         "soong-env",
+         "soong-shared",
+     ],
++    shared_libs: [
++    	"libEGL", 
++    	"libGLESv1_CM", 
++    	"libGLESv2", 
++    	"libandroid", 
++    	"libc", 
++    	"libdl", 
++    	"libjnigraphics", 
++    	"liblog", 
++    	"libm",
++    	"libstdc++"
++    ],
+     srcs: [
+         "android/androidmk.go",
+         "android/apex.go",
