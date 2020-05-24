@@ -14,6 +14,6 @@
  PRODUCT_MODEL := AOSP on walleye
 +
 +LOCAL_SHARED_LIBRARIES := libEGL libGLESv1_CM libGLESv2 libandroid libc libdl libjnigraphics liblog libm libstdc++
-+GAPPS_VARIANT := stock
++GAPPS_VARIANT := mini
 +GAPPS_PRODUCT_PACKAGES += ProjectFi
 +$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
