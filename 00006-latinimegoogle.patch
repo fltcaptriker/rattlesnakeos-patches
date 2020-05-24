@@ -1,0 +1,8 @@
+--- a/vendor/opengapps/build/modules/LatinImeGoogle/Android.mk	2020-05-23 22:19:31.009612826 -0400
++++ b/vendor/opengapps/build/modules/LatinImeGoogle/Android.mk	2020-05-23 22:22:12.418769662 -0400
+@@ -14,4 +14,5 @@
+ include $(CLEAR_VARS)
+ include $(GAPPS_CLEAR_VARS)
+ LOCAL_MODULE := libjni_latinimegoogle
++LOCAL_SHARED_LIBRARIES := libc libdl libm libstdc++
+ include $(BUILD_GAPPS_PREBUILT_SHARED_LIBRARY)

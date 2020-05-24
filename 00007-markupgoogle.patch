@@ -1,0 +1,8 @@
+--- a/vendor/opengapps/build/modules/MarkupGoogle/Android.mk	2020-05-23 22:10:11.902660834 -0400
++++ b/vendor/opengapps/build/modules/MarkupGoogle/Android.mk	2020-05-23 22:15:58.596491989 -0400
+@@ -10,4 +10,5 @@
+ include $(CLEAR_VARS)
+ include $(GAPPS_CLEAR_VARS)
+ LOCAL_MODULE := libsketchology_native
++LOCAL_SHARED_LIBRARIES := libEGL libGLESv1_CM libGLESv2 libandroid libc libdl libjnigraphics liblog libm
+ include $(BUILD_GAPPS_PREBUILT_SHARED_LIBRARY)
