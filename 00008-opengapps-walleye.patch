@@ -1,0 +1,19 @@
+--- a/device/google/muskie/aosp_walleye.mk	2020-05-24 08:31:14.993203624 -0400
++++ b/device/google/muskie/aosp_walleye.mk	2020-05-24 08:33:09.611715737 -0400
+@@ -33,10 +33,15 @@
+     device/google/muskie/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
+     frameworks/native/data/etc/aosp_excluded_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/aosp_excluded_hardware.xml
+ 
+-PRODUCT_RESTRICT_VENDOR_FILES := owner
++PRODUCT_RESTRICT_VENDOR_FILES := false
+ 
+ PRODUCT_MANUFACTURER := Google
+ PRODUCT_BRAND := Android
+ PRODUCT_NAME := aosp_walleye
+ PRODUCT_DEVICE := walleye
+ PRODUCT_MODEL := AOSP on walleye
++
++LOCAL_SHARED_LIBRARIES := libEGL libGLESv1_CM libGLESv2 libandroid libc libdl libjnigraphics liblog libm libstdc++
++GAPPS_PRODUCT_PACKAGES += ProjectFi
++GAPPS_VARIANT := stock
++$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
