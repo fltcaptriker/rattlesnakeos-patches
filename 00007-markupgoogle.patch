@@ -4,5 +4,5 @@
  include $(CLEAR_VARS)
  include $(GAPPS_CLEAR_VARS)
  LOCAL_MODULE := libsketchology_native
-+LOCAL_SHARED_LIBRARIES := libEGL libGLESv1_CM libGLESv2 libandroid libc libdl libjnigraphics liblog libm
++LOCAL_CHECK_ELF_FILES := false
  include $(BUILD_GAPPS_PREBUILT_SHARED_LIBRARY)
