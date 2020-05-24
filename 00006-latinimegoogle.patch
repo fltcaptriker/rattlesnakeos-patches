@@ -4,5 +4,5 @@
  include $(CLEAR_VARS)
  include $(GAPPS_CLEAR_VARS)
  LOCAL_MODULE := libjni_latinimegoogle
-+LOCAL_SHARED_LIBRARIES := libc libdl libm libstdc++
++LOCAL_CHECK_ELF_FILES := false
  include $(BUILD_GAPPS_PREBUILT_SHARED_LIBRARY)
