@@ -15,8 +15,8 @@
 +
 +LOCAL_SHARED_LIBRARIES := libEGL libGLESv1_CM libGLESv2 libandroid libc libdl libjnigraphics liblog libm libstdc++
 +
-+GAPPS_VARIANT := super
++GAPPS_VARIANT := mini
 +$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
-+
-+GAPPS_EXCLUDED_PACKAGES := Zhuyin, Pinyin, Korean, Japanese, Indic
++GAPPS_PRODUCT_PACKAGES += Tycho, GCS
++GAPPS_FORCE_DIALER_OVERRIDES := true
 +GAPPS_FORCE_PACKAGE_OVERRIDES := true
