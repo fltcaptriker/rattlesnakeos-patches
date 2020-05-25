@@ -15,7 +15,7 @@
 +LOCAL_SHARED_LIBRARIES := libEGL libGLESv1_CM libGLESv2 libandroid libc libdl libjnigraphics liblog libm libstdc++
 +GAPPS_VARIANT := mini
 +$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
-+GAPPS_PRODUCT_PACKAGES += Tycho GCS LatinImeGoogle ProjectFi
++GAPPS_PRODUCT_PACKAGES += Tycho GCS LatinImeGoogle GoogleContacts GoogleCamera ProjectFi
 +GAPPS_FORCE_DIALER_OVERRIDES := true
 +GAPPS_FORCE_MMS_OVERRIDES := true
 +GAPPS_FORCE_BROWSER_OVERRIDES := true
