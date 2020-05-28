@@ -1,0 +1,21 @@
+--- a/vendor/google_devices/walleye/walleye-vendor-blobs.mk	2020-05-28 08:44:16.473827339 +0000
++++ b/vendor/google_devices/walleye/walleye-vendor-blobs.mk	2020-05-28 19:54:33.112297351 +0000
+@@ -10,6 +10,10 @@
+     vendor/google_devices/walleye/proprietary/etc/firmware/music_detector.descriptor:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/music_detector.descriptor:google \
+     vendor/google_devices/walleye/proprietary/etc/firmware/music_detector.sound_model:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/music_detector.sound_model:google \
+     vendor/google_devices/walleye/proprietary/etc/permissions/privapp-permissions-wahoo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wahoo.xml:google \
++	
++    packages/apps/Custom/0/EuiccGoogle/privapp-permissions-google-p.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google-p.xml:google \
++    packages/apps/Custom/0/EuiccGoogle/privapp-permissions-google-ps.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google-ps.xml:google \
++	
+     vendor/google_devices/walleye/proprietary/etc/sysconfig/framework-sysconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/framework-sysconfig.xml:google \
+     vendor/google_devices/walleye/proprietary/lib/com.qualcomm.qti.ims.radio@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.ims.radio@1.0.so:google \
+     vendor/google_devices/walleye/proprietary/lib/com.qualcomm.qti.imsrtpservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.imsrtpservice@1.0.so:google \
+@@ -1250,5 +1254,6 @@
+ 
+ PRODUCT_COPY_FILES += \
+     vendor/google_devices/walleye/proprietary/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimsmedia_jni.so:google \
+-    vendor/google_devices/walleye/proprietary/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimscamera_jni.so:google
++    vendor/google_devices/walleye/proprietary/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimscamera_jni.so:google \
++    packages/apps/Custom/0/EuiccSupportPixel/esim0.img::$(TARGET_COPY_OUT_SYSTEM)/priv-app/EuiccGoogle/esim0.img:google
+ 
