@@ -1,0 +1,28 @@
+--- a/device/google/wahoo/permissions/privapp-permissions-aosp_wahoo.xml	2020-05-28 11:52:15.075475559 +0000
++++ b/device/google/wahoo/permissions/privapp-permissions-aosp_wahoo.xml	2020-05-28 11:53:49.763037260 +0000
+@@ -8,5 +8,24 @@
+         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+         <permission name="android.permission.PACKET_KEEPALIVE_OFFLOAD"/>
+     </privapp-permissions>
++	
++	<privapp-permissions package="com.google.android.euicc">
++        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
++        <permission name="android.permission.MODIFY_PHONE_STATE"/>
++        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
++        <permission name="android.permission.REBOOT"/>
++        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
++        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
++        <permission name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS"/>
++        <permission name="com.android.permission.INSTALL_EXISTING_PACKAGES" />
++        <permission name="com.android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS"/>
++        <permission name="com.google.android.permission.USE_GRIL" />
++    </privapp-permissions>
++
++    <privapp-permissions package="com.google.euiccpixel">
++        <permission name="android.permission.MODIFY_PHONE_STATE"/>
++        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
++        <permission name="android.permission.REBOOT"/>
++    </privapp-permissions>
+ 
+ </permissions>
+\ No newline at end of file
